@@ -13,7 +13,7 @@ class Aluno():
     def delete(self, matricula):
         try:
             conexao = Connection()
-            conexao.delete('delete from aluno where matricula = {0}'.format(matricula))
+            conexao.delete("delete from aluno where matricula = {0};".format(matricula))
         except (Exception, psycopg2.DatabaseError) as error:
             print("Error", error)
         

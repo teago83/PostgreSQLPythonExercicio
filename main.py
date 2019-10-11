@@ -34,7 +34,7 @@ while True:
     
     elif op == 4:
         print("Deletar dados de um(a) aluno(a):")
-        delete = int(input("Digite a matrícula do(a) aluno(a)"
+        matricula = int(input("Digite a matrícula do(a) aluno(a)"
                            "que terá seus dados deletados:"))
         cassio.delete(matricula)
     
